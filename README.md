@@ -1,3 +1,5 @@
+**Forked from [oxypatic/RecORDER](https://github.com/oxypatic/RecORDER)** by oxypatic (formerly padiix). This repository is a reliability-focused fork of that script, released under the same AGPL-3.0 license. All credit for the original idea, design and code goes to the upstream author; see [Origin and credits](#origin-and-credits).
+
 ![Logo](https://github.com/user-attachments/assets/273b1b70-aa5a-43c3-a669-2cf8704adf18)
 
 
@@ -19,15 +21,13 @@
    </picture>
 </div>
 
-> [!NOTE]
-> This is a reliability-focused fork of [oxypatic/RecORDER](https://github.com/oxypatic/RecORDER) (v3.1.1), licensed under the AGPL-3.0 like the original. See [AUDIT.md](AUDIT.md) for what was found and changed, and `reference/RecORDER_3.1.1_original.py` for the unmodified upstream script.
-
 ## Table of Content
-* [What does this script does?](https://github.com/oxypatic/RecORDER?tab=readme-ov-file#what-does-this-script-do)
-* [Features of the script](https://github.com/oxypatic/RecORDER?tab=readme-ov-file#features-of-the-script)
-* [What do I need to do to make it work?](https://github.com/oxypatic/RecORDER?tab=readme-ov-file#what-do-i-need-to-do-to-make-it-work)
-* [Known limitations](https://github.com/oxypatic/RecORDER?tab=readme-ov-file#known-limitations)
-* [FAQ](https://github.com/oxypatic/RecORDER?tab=readme-ov-file#faq)
+* [What does this script does?](#what-does-this-script-do)
+* [Features of the script](#features-of-the-script)
+* [What do I need to do to make it work?](#what-do-i-need-to-do-to-make-it-work)
+* [Known limitations](#known-limitations)
+* [FAQ](#faq)
+* [Origin and credits](#origin-and-credits)
 
 ## What does this script do?
 The script recreates the organization of NVIDIA Shadow Play, <br>which placed all media captured while playing specific game into folder called after the game.
@@ -137,3 +137,20 @@ First things first!
 <details>
 <summary>Work in Progress</summary>
 </details>
+
+## Origin and credits
+
+This project is a fork of **[oxypatic/RecORDER](https://github.com/oxypatic/RecORDER)**, written and maintained by
+[oxypatic](https://github.com/oxypatic) (the repository was previously published under the name padiix).
+The logo, the ShadowPlay-style folder layout, the settings, the per-scene source memory and the split-recording
+support all come from the upstream project.
+
+What this fork adds is a reliability pass on top of upstream v3.1.1:
+
+* an audit of the original script ([AUDIT.md](AUDIT.md)),
+* a rewrite against those findings (`RecORDER.py`, version 3.2.0),
+* a test suite with a stand-in `obspython` module (`tests/`),
+* the unmodified upstream script for comparison (`reference/RecORDER_3.1.1_original.py`).
+
+Both the original and this fork are licensed under the **GNU Affero General Public License v3.0** (see [LICENSE](LICENSE)).
+If you find the script useful, please star the upstream repository as well.

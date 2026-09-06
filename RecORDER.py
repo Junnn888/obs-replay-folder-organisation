@@ -2,7 +2,9 @@
 RecORDER - organize OBS media (recordings, replay buffer clips, screenshots)
 into per-game subfolders, ShadowPlay style.
 
-Author: oxypatic! (61553947+oxypatic@users.noreply.github.com)
+Original author: oxypatic (61553947+oxypatic@users.noreply.github.com) - https://github.com/oxypatic/RecORDER
+This file is a fork (v3.2.0) maintained at https://github.com/Junnn888/obs-replay-folder-organisation
+Licensed under the GNU AGPL v3.0, like the original.
 """
 
 import json
@@ -113,7 +115,7 @@ DEFAULT_REPLAY_FOLDER_NAME = "replay"
 DEFAULT_SCREENSHOT_FOLDER_NAME = "screenshot"
 MAX_FOLDER_NAME_LENGTH = 100
 
-UPDATE_CHECK_URL = "https://api.github.com/repos/oxypatic/RecORDER/releases/latest"
+UPDATE_CHECK_URL = "https://api.github.com/repos/Junnn888/obs-replay-folder-organisation/releases/latest"
 UPDATE_CHECK_TIMEOUT_SECONDS = 2
 
 
@@ -2023,6 +2025,7 @@ def script_description():
         <i>Similar to ShadowPlay (GeForce Experience</i>).
         </div>
         <div style="font-size: 12pt; text-align: left; margin-top: 20px; margin-bottom: 20px;">
-        Created and maintained by: oxypatic
+        Original script by oxypatic (<a href="https://github.com/oxypatic/RecORDER">oxypatic/RecORDER</a>).<br>
+        This fork: <a href="https://github.com/Junnn888/obs-replay-folder-organisation">Junnn888/obs-replay-folder-organisation</a>
         </div>
     """
